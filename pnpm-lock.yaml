@@ -375,6 +375,33 @@ importers:
       ts-jest: 28.0.5_vz6zla63wvofljfl6elifyg77e
       typescript: 4.7.3
 
+  examples/with-jotai:
+    specifiers:
+      '@trivago/prettier-plugin-sort-imports': 3.2.0
+      '@types/chrome': 0.0.190
+      '@types/node': 17.0.43
+      '@types/react': 18.0.12
+      '@types/react-dom': 18.0.5
+      jotai: 1.7.2
+      plasmo: latest
+      prettier: 2.7.0
+      react: 18.2.0
+      react-dom: 18.2.0
+      typescript: 4.7.3
+    dependencies:
+      jotai: 1.7.2_react@18.2.0
+      plasmo: link:../../cli/plasmo
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+    devDependencies:
+      '@trivago/prettier-plugin-sort-imports': 3.2.0_prettier@2.7.0
+      '@types/chrome': 0.0.190
+      '@types/node': 17.0.43
+      '@types/react': 18.0.12
+      '@types/react-dom': 18.0.5
+      prettier: 2.7.0
+      typescript: 4.7.3
+
   examples/with-main-world-content-script-injection:
     specifiers:
       '@trivago/prettier-plugin-sort-imports': 3.2.0
@@ -1237,9 +1264,9 @@ packages:
       '@babel/helper-compilation-targets': 7.18.2_@babel+core@7.13.10
       '@babel/helper-module-transforms': 7.18.0
       '@babel/helpers': 7.18.2
-      '@babel/parser': 7.18.4
+      '@babel/parser': 7.18.5
       '@babel/template': 7.16.7
-      '@babel/traverse': 7.18.2
+      '@babel/traverse': 7.18.5
       '@babel/types': 7.18.4
       convert-source-map: 1.8.0
       debug: 4.3.4
@@ -1644,7 +1671,7 @@ packages:
       '@babel/generator': 7.18.2
       '@babel/helper-function-name': 7.17.9
       '@babel/helper-split-export-declaration': 7.16.7
-      '@babel/parser': 7.18.4
+      '@babel/parser': 7.18.5
       '@babel/types': 7.18.4
       debug: 4.3.4
       globals: 11.12.0
@@ -7635,7 +7662,7 @@ packages:
     dev: true
 
   /javascript-natural-sort/0.7.1:
-    resolution: {integrity: sha1-+eIwPUUH9tdDVac2ZNFED7Wg71k=}
+    resolution: {integrity: sha512-nO6jcEfZWQXDhOiBtG2KvKyEptz7RVbpGP4vTD2hLBdmNQSsCiicO2Ioinv6UI4y9ukqnBpy+XZ9H6uLNgJTlw==}
     dev: true
 
   /jest-changed-files/28.0.2:
@@ -8091,6 +8118,43 @@ packages:
       - supports-color
       - ts-node
     dev: true
+
+  /jotai/1.7.2_react@18.2.0:
+    resolution: {integrity: sha512-ksvpW1Wu+/HwW1iDYq23PpXLu2df5Vv+eWw70jRAx7IEY4c+qRsORULnqPFurSy/X8LSoPcRhVDJx/cyf8jjMg==}
+    engines: {node: '>=12.7.0'}
+    peerDependencies:
+      '@babel/core': '*'
+      '@babel/template': '*'
+      '@urql/core': '*'
+      immer: '*'
+      optics-ts: '*'
+      react: '>=16.8'
+      react-query: '*'
+      valtio: '*'
+      wonka: '*'
+      xstate: '*'
+    peerDependenciesMeta:
+      '@babel/core':
+        optional: true
+      '@babel/template':
+        optional: true
+      '@urql/core':
+        optional: true
+      immer:
+        optional: true
+      optics-ts:
+        optional: true
+      react-query:
+        optional: true
+      valtio:
+        optional: true
+      wonka:
+        optional: true
+      xstate:
+        optional: true
+    dependencies:
+      react: 18.2.0
+    dev: false
 
   /joycon/3.1.1:
     resolution: {integrity: sha512-34wB/Y7MW7bzjKRjUKTa46I2Z7eV62Rkhva+KkopW7Qvv/OSWBqvkSY7vusOPrNuZcUG3tApvdVgNB8POj3SPw==}
@@ -10813,7 +10877,7 @@ packages:
     dev: true
 
   /strip-hex-prefix/1.0.0:
-    resolution: {integrity: sha1-DF8VX+8RUTczd96du1iNoFUA428=}
+    resolution: {integrity: sha512-q8d4ue7JGEiVcypji1bALTos+0pWtyGlivAWyPuTkHzuTCJqrK9sWxYQZUq6Nq3cuyv3bm734IhHvHtGGURU6A==}
     engines: {node: '>=6.5.0', npm: '>=3'}
     dependencies:
       is-hex-prefixed: 1.0.0
